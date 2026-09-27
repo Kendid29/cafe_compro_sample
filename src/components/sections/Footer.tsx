@@ -12,8 +12,8 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <img
                   alt="Senja Coffee Logo"
-                  className="h-8 w-auto object-contain brightness-200 contrast-75"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1VryJRxDSAPxj4okZTzUucy0saZKExTe1vxgxjr6JUNLLIJHprruDJMIV-_Q32qqUvGu1yOHTN2fxfWf04Gl22yF0WgcbNfpMhzhItCWsD-HDtZTji4E0tEvXxeHj51BVgCj5fqM7h-EEh8LCCGQNRkhPXCKM20zEsXDviIReKMXeNGgowYwcU3n6uw4ucqOF-EX682L07FI4oPrPB1SvdtnkD5J-lxY9V-1PFQd0LSu7-dg9_-_6mLvh8"
+                  className="h-10 w-auto object-contain rounded-xl p-1 bg-surface-bright/95 shadow-sm"
+                  src="/logo.png"
                 />
                 <span className="font-headline-md text-headline-md tracking-tight text-surface-bright">Senja</span>
               </div>

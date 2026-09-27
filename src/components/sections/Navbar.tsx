@@ -30,14 +30,18 @@ export function Navbar() {
       <div className="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 group">
-            <img
-              alt="Senja Coffee Logo"
+            <div
               className={cn(
-                "h-8 w-auto object-contain transition-all duration-300 group-hover:scale-95",
-                !isScrolled && "brightness-0 invert opacity-90"
+                "p-1 rounded-xl transition-all duration-300 flex items-center justify-center",
+                !isScrolled ? "bg-surface/90 shadow-sm backdrop-blur-sm ring-1 ring-white/10" : "bg-transparent"
               )}
-              src="https://lh3.googleusercontent.com/aida/AEtjO1VryJRxDSAPxj4okZTzUucy0saZKExTe1vxgxjr6JUNLLIJHprruDJMIV-_Q32qqUvGu1yOHTN2fxfWf04Gl22yF0WgcbNfpMhzhItCWsD-HDtZTji4E0tEvXxeHj51BVgCj5fqM7h-EEh8LCCGQNRkhPXCKM20zEsXDviIReKMXeNGgowYwcU3n6uw4ucqOF-EX682L07FI4oPrPB1SvdtnkD5J-lxY9V-1PFQd0LSu7-dg9_-_6mLvh8"
-            />
+            >
+              <img
+                alt="Senja Coffee Logo"
+                className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                src="/logo.png"
+              />
+            </div>
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-8">
