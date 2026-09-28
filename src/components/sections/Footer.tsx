@@ -12,7 +12,7 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <img
                   alt="Senja Coffee Logo"
-                  className="h-10 w-auto object-contain rounded-xl p-1 bg-surface-bright/95 shadow-sm"
+                  className="h-11 w-11 rounded-full object-contain drop-shadow-md ring-1 ring-white/20"
                   src="/logo.png"
                 />
                 <span className="font-headline-md text-headline-md tracking-tight text-surface-bright">Senja</span>

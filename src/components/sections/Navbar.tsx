@@ -30,18 +30,16 @@ export function Navbar() {
       <div className="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-3 group">
-            <div
+            <img
+              alt="Senja Coffee Logo"
               className={cn(
-                "p-1 rounded-xl transition-all duration-300 flex items-center justify-center",
-                !isScrolled ? "bg-surface/90 shadow-sm backdrop-blur-sm ring-1 ring-white/10" : "bg-transparent"
+                "h-11 w-11 md:h-12 md:w-12 rounded-full object-contain transition-all duration-300 group-hover:scale-105",
+                !isScrolled
+                  ? "drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)] ring-2 ring-white/30"
+                  : "drop-shadow-sm ring-1 ring-primary/10"
               )}
-            >
-              <img
-                alt="Senja Coffee Logo"
-                className="h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                src="/logo.png"
-              />
-            </div>
+              src="/logo.png"
+            />
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-8">
